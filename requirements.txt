@@ -1,10 +1,7 @@
 
 Flask==2.0.2
-flask-ngrok==0.0.25
 gunicorn==20.1.0
 openai==0.11.3
-openpyxl==3.0.9
-slack==0.0.2
 slack-bolt==1.10.0
 slack-sdk==3.12.0
 slackclient==2.9.3
