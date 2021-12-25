@@ -28,8 +28,8 @@ def receive_wisdom(query):
         temperature=0.5,
         max_tokens=76,
         top_p=1,
-        frequency_penalty=0.5,
-        presence_penalty=0.3,
+        frequency_penalty=0.9,
+        presence_penalty=0.4,
         stop=["Q:"] # Cuts of responses after question is answered. Otherwise model continues generating question / answer pairs on its own.
     )
     answer = response.choices[0].text
@@ -76,7 +76,7 @@ def slack_events():
 
 @app.route("/")
 def hello_world():
-    return "<p>I'm a real boy!!</p>"
+    return "<p>Nothing to see here. Move along.</p>"
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=8080, debug=True)
