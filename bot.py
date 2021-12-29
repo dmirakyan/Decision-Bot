@@ -52,13 +52,13 @@ def greetings(payload: dict, say: Say):
     
     # Rolls a 1-100 dice. Used to occasionally respond with a pre-determined phrase. Otherwise query GPT3.
     score = random.randint(1,100)
-    if score > 95:
+    if score > 99:
         answer = "Try asking in #analytics-work?"
-    elif score > 90 :
+    elif score > 98 :
         answer = "It's probably just seasonality"
-    elif score > 85 :
+    elif score > 97 :
         answer = "It's probably just pricing"
-    elif score > 80 :
+    elif score > 96 :
         answer = "It's probably just marketing mix"
     else:
         answer = receive_wisdom(user_query)  
